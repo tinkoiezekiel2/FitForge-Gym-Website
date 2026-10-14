@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | FitForge Gym &amp; Fitness Centre</title>
+<meta name="description" content="FitForge Gym &amp; Fitness Centre: strength training, classes and personal coaching.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header><div class="wrap bar">
+<a class="logo" href="index.html">Fit<span>Forge</span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="membership.html">Membership</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<section class="hero" style="--img:url(images/hero.jpg)"><div class="wrap"><h1>Forge a <em>stronger</em> you</h1><p>Strength floors, group classes and coaches who know your name. Open 7 days a week.</p><div class="btns"><a class="btn" href="membership.html">Join today</a><a class="btn ghost" href="services.html">See our services</a></div></div></section>
+<section class="light"><div class="wrap stats"><div><b>1,200+</b><p>Active members</p></div><div><b>15</b><p>Expert trainers</p></div><div><b>40+</b><p>Weekly classes</p></div><div><b>7</b><p>Days open</p></div></div></section>
+<section><div class="wrap"><div class="center"><h2>What you can do here</h2><p>Everything you need to train, recover and stay consistent.</p></div>
+<div class="grid g3"><div class="card"><div class="img" style="--img:url(images/strength.jpg)" role="img" aria-label="Strength training"></div><h3>Strength training</h3><p>Racks, free weights and plate-loaded machines for every level.</p></div><div class="card"><div class="img" style="--img:url(images/classes.jpg)" role="img" aria-label="Group classes"></div><h3>Group classes</h3><p>HIIT, spin, boxing and yoga with friendly coaches.</p></div><div class="card"><div class="img" style="--img:url(images/coaching.jpg)" role="img" aria-label="Personal coaching"></div><h3>Personal coaching</h3><p>One-to-one plans built around your goals.</p></div></div></div></section>
+<section class="alt"><div class="wrap split"><div class="img" style="--img:url(images/gym-floor.jpg)" role="img" aria-label="FitForge gym floor"></div><div><h2>Train in a space that keeps you going</h2><p>Clean equipment, good music and a community that cheers you on. Whether it is your first workout or your five-hundredth, you belong here.</p><div class="btns"><a class="btn" href="about.html">About FitForge</a><a class="btn ghost" href="trainers.html">Meet the trainers</a></div></div></div></section>
+<section class="cta"><div class="wrap"><h2>Your first week is on us</h2><p>Book a free tour and trial session today.</p><a class="btn" href="contact.html">Book a free trial</a></div></section>
+<!-- FOOTER -->
+<footer><div class="wrap">
+<div class="fgrid">
+<div><a class="logo" href="index.html">Fit<span>Forge</span></a><p>Gym &amp; Fitness Centre. Build strength. Build habits.</p></div>
+<div><h3>Pages</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="membership.html">Membership</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h3>Visit us</h3><p>Moi Avenue, Nairobi<br>Mon–Fri 5:00–22:00<br>Sat–Sun 7:00–18:00</p></div>
+<div><h3>Contact</h3><p>+254 700 000 000<br><a href="mailto:hello@fitforge.example">hello@fitforge.example</a></p></div>
+</div>
+<p class="copy">&copy; 2026 FitForge Gym &amp; Fitness Centre. All rights reserved.</p>
+</div></footer>
+<script>
+const b=document.querySelector(".menu-btn"),n=document.getElementById("nav");
+b.addEventListener("click",()=>{const o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | FitForge Gym &amp; Fitness Centre</title>
+<meta name="description" content="FitForge Gym &amp; Fitness Centre: strength training, classes and personal coaching.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header><div class="wrap bar">
+<a class="logo" href="index.html">Fit<span>Forge</span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="services.html">Services</a></li><li><a href="membership.html">Membership</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<section class="hero small" style="--img:url(images/about.jpg)"><div class="wrap"><h1>About FitForge</h1><p>A neighbourhood gym built on hard work, honest coaching and respect for every member.</p></div></section>
+<section><div class="wrap split"><div><h2>Our story</h2><p>FitForge opened with one goal: a gym where beginners feel welcome and experienced lifters still find the equipment they need.</p><p>Today we are a full fitness centre with a strength floor, studio, cardio zone and recovery area, all run by certified coaches.</p></div><div class="img" style="--img:url(images/about-gym.jpg)" role="img" aria-label="Inside FitForge"></div></div></section>
+<section class="light"><div class="wrap"><div class="center"><h2>What we stand for</h2></div><div class="grid g3"><div class="card"><h3>Effort</h3><p>Progress comes from showing up. We help you do that.</p></div><div class="card"><h3>Respect</h3><p>Every body, every level, every goal is welcome.</p></div><div class="card"><h3>Results</h3><p>Clear plans and honest tracking, not gimmicks.</p></div></div></div></section>
+<section class="cta"><div class="wrap"><h2>Your first week is on us</h2><p>Book a free tour and trial session today.</p><a class="btn" href="contact.html">Book a free trial</a></div></section>
+<!-- FOOTER -->
+<footer><div class="wrap">
+<div class="fgrid">
+<div><a class="logo" href="index.html">Fit<span>Forge</span></a><p>Gym &amp; Fitness Centre. Build strength. Build habits.</p></div>
+<div><h3>Pages</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="membership.html">Membership</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h3>Visit us</h3><p>Moi Avenue, Nairobi<br>Mon–Fri 5:00–22:00<br>Sat–Sun 7:00–18:00</p></div>
+<div><h3>Contact</h3><p>+254 700 000 000<br><a href="mailto:hello@fitforge.example">hello@fitforge.example</a></p></div>
+</div>
+<p class="copy">&copy; 2026 FitForge Gym &amp; Fitness Centre. All rights reserved.</p>
+</div></footer>
+<script>
+const b=document.querySelector(".menu-btn"),n=document.getElementById("nav");
+b.addEventListener("click",()=>{const o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+</script>
+</body>
+</html>

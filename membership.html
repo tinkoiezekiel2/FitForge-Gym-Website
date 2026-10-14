@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Membership Plans | FitForge Gym &amp; Fitness Centre</title>
+<meta name="description" content="FitForge Gym &amp; Fitness Centre: strength training, classes and personal coaching.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header><div class="wrap bar">
+<a class="logo" href="index.html">Fit<span>Forge</span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="membership.html" aria-current="page">Membership</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<section class="hero small" style="--img:url(images/membership.jpg)"><div class="wrap"><h1>Membership plans</h1><p>Simple monthly pricing. No joining fee on any plan this month.</p></div></section>
+<section><div class="wrap"><div class="center"><h2>Pick your plan</h2><p>Prices are examples. Replace them with your real rates.</p></div>
+<div class="grid g3"><div class="card plan"><h3>Basic</h3><div class="price">KES 3,000<small> / month</small></div><ul><li>Gym floor access</li><li>Cardio zone</li><li>Locker room</li></ul><a class="btn" href="contact.html">Choose Basic</a></div><div class="card plan best"><h3>Pro · Most popular</h3><div class="price">KES 5,500<small> / month</small></div><ul><li>Everything in Basic</li><li>All group classes</li><li>1 coaching check-in a month</li></ul><a class="btn" href="contact.html">Choose Pro</a></div><div class="card plan"><h3>Elite</h3><div class="price">KES 9,000<small> / month</small></div><ul><li>Everything in Pro</li><li>4 personal training sessions</li><li>Nutrition plan</li><li>Recovery area</li></ul><a class="btn" href="contact.html">Choose Elite</a></div></div></div></section>
+<section class="light"><div class="wrap center"><h2>Questions?</h2><p>Not sure which plan fits? Our team will help you choose.</p><div class="btns" style="justify-content:center"><a class="btn" href="contact.html">Talk to us</a></div></div></section>
+<!-- FOOTER -->
+<footer><div class="wrap">
+<div class="fgrid">
+<div><a class="logo" href="index.html">Fit<span>Forge</span></a><p>Gym &amp; Fitness Centre. Build strength. Build habits.</p></div>
+<div><h3>Pages</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="membership.html">Membership</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h3>Visit us</h3><p>Moi Avenue, Nairobi<br>Mon–Fri 5:00–22:00<br>Sat–Sun 7:00–18:00</p></div>
+<div><h3>Contact</h3><p>+254 700 000 000<br><a href="mailto:hello@fitforge.example">hello@fitforge.example</a></p></div>
+</div>
+<p class="copy">&copy; 2026 FitForge Gym &amp; Fitness Centre. All rights reserved.</p>
+</div></footer>
+<script>
+const b=document.querySelector(".menu-btn"),n=document.getElementById("nav");
+b.addEventListener("click",()=>{const o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+</script>
+</body>
+</html>

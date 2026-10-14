@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | FitForge Gym &amp; Fitness Centre</title>
+<meta name="description" content="FitForge Gym &amp; Fitness Centre: strength training, classes and personal coaching.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header><div class="wrap bar">
+<a class="logo" href="index.html">Fit<span>Forge</span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="membership.html">Membership</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</div></header>
+<section class="hero small" style="--img:url(images/contact.jpg)"><div class="wrap"><h1>Contact us</h1><p>Questions, tours and trial bookings. We reply within one working day.</p></div></section>
+<section><div class="wrap split"><div><h2>Send a message</h2>
+<form id="f" action="#" novalidate>
+<label>Full name<input name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>I am interested in<select name="topic"><option>A free trial</option><option>Membership</option><option>Personal training</option><option>Something else</option></select></label>
+<label>Message<textarea name="msg" rows="5"></textarea></label>
+<button class="btn" type="submit">Send message</button><p class="note" id="ok" role="status"></p>
+</form></div>
+<div><h2>Find us</h2><p><b>Address:</b> Moi Avenue, Nairobi<br><b>Phone:</b> +254 700 000 000<br><b>Email:</b> hello@fitforge.example</p><p><b>Hours:</b><br>Mon–Fri 5:00–22:00<br>Sat–Sun 7:00–18:00</p>
+<div class="img" style="min-height:200px;margin-top:18px" role="img" aria-label="Map placeholder"></div></div></div></section>
+<script>
+document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();const f=e.target,ok=document.getElementById("ok");
+if(!f.name.value.trim()||!/\S+@\S+\.\S+/.test(f.email.value)){ok.textContent="Please enter your name and a valid email.";return}
+ok.textContent="Thanks "+f.name.value.split(" ")[0]+"! We will be in touch soon.";f.reset()});
+</script>
+<!-- FOOTER -->
+<footer><div class="wrap">
+<div class="fgrid">
+<div><a class="logo" href="index.html">Fit<span>Forge</span></a><p>Gym &amp; Fitness Centre. Build strength. Build habits.</p></div>
+<div><h3>Pages</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="membership.html">Membership</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h3>Visit us</h3><p>Moi Avenue, Nairobi<br>Mon–Fri 5:00–22:00<br>Sat–Sun 7:00–18:00</p></div>
+<div><h3>Contact</h3><p>+254 700 000 000<br><a href="mailto:hello@fitforge.example">hello@fitforge.example</a></p></div>
+</div>
+<p class="copy">&copy; 2026 FitForge Gym &amp; Fitness Centre. All rights reserved.</p>
+</div></footer>
+<script>
+const b=document.querySelector(".menu-btn"),n=document.getElementById("nav");
+b.addEventListener("click",()=>{const o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+</script>
+</body>
+</html>
